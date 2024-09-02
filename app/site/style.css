@@ -1,0 +1,382 @@
+@font-face {
+    font-family: 'Involve Medium';
+    src: url(/app/site/fonts/Involve-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Involve SemiBold';
+    src: url(/app/site/fonts/Involve-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Manrope ExtraBold';
+    src: url(/app/site/fonts/Manrope-ExtraBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Manrope Medium'; 
+    src: url(/app/site/fonts/Manrope-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Manrope Regular';
+    src: url(/app/site/fonts/Manrope-Regular.ttf) format('truetype');
+}
+
+body{
+    margin: 0;
+    background-color: #ffffff;
+    color: #282D3C;
+}
+a{
+    color:#282D3C;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    max-width: 1520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color:#FFFFFF;
+    
+    background-color: #007BFB;
+    border: none;
+    height: 61px;
+    border-radius: 10px;
+
+    transition: opacity 0.3s;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+
+h1{
+    margin-bottom: 30px;
+    font-family: 'Involve SemiBold';
+    font-weight: 600;
+    font-size: 65px;
+    text-align: center;
+    line-height: 1.2;
+}
+h2{
+    font-family: 'Involve SemiBold';
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 1.2;
+    margin: 0;
+}
+h3{
+    font-family: 'Manrope Regular';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+}
+h4{
+    font-family: 'Manrope Regular';
+    font-weight: 400;
+    font-size: 16px;
+    color: #8E919C;
+    line-height: 1.4;
+}
+
+/* Хэдэр */
+.header{
+    padding: 30px;
+    background-color: #F4F6FB;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    font-family: 'Involve Medium';
+    font-weight: 500;
+    font-size: 30px;
+    color:#007BFB;
+}
+.header__list {
+    display: flex;
+    gap: 30px;
+}
+.header__nav {
+    font-family: 'Manrope Medium';
+    font-weight: 500;
+    font-size: 16px;
+}
+.header__nav a{
+    transition: opacity 0.3s;
+}
+.header__nav a:hover{
+    opacity: 0.7;
+}
+
+/* Блок order */
+.order{
+    padding-top: 141px;
+    padding-bottom: 300px;
+    background-color: #F4F6FB;
+}
+.slogan{
+    font-family: 'Manrope Regular';
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.row input{
+    text-indent: 23px; 
+    height: 61px;
+    width: 249px;
+    outline: none;
+    border: none;
+    font-family: 'Manrope Regular';
+    font-weight: 400;
+    font-size: 16px;
+    color: #282D3C;
+}
+.row input::placeholder{
+    color: #8E919C;
+}
+.btn-small{
+    font-family: 'Manrope ExtraBold';
+    font-weight: 400;
+    font-size: 16;
+    width: 231px;
+    margin-left: 19px;
+}
+.prompt{
+    text-align: center;
+}
+.row select{
+    text-indent: 23px; 
+    height: 61px;
+    width: 249px;
+    border: none;
+    font-family: 'Manrope Regular';
+    font-weight: 400;
+    font-size: 16px;
+    color: #282D3C;
+}
+
+/* Блок calculator */
+
+.calculator {
+    position: relative; 
+    padding-top: 150px;
+    padding-bottom: 276px;
+    display: flex;
+    text-align: center;
+}
+
+.calculator::before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/app/site/imgs/magicpattern-KfFmwa7m5VQ-unsplash 1.png');
+    background-size: cover; 
+    background-position: center;
+    opacity: 0.05; 
+    z-index: -1; 
+}
+.calculator__name {
+    margin-bottom: 30px;
+}
+.calculator__text {
+    margin-bottom: 50px;
+    width: 934px;
+}
+.calculator__solver {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.big-button {
+    font-family: 'Manrope ExtraBold';
+    font-weight: 400;
+    font-size: 16;
+    width: 407px;
+    height: 61px;
+    font-size: 18px;
+}
+/*Футер*/
+footer{
+    background-color: #282D3C;
+}
+footer .container {
+    height: 594px;
+}
+.footer-slogan {
+    font-family: 'Manrope Regular';
+    font-weight: 400;
+    padding-top: 90px;
+    padding-bottom: 100px;
+    color: #FFFFFF;
+}
+.footer-nav {
+    font-family: 'Manrope Regular';
+    font-weight: 400;
+    display: flex;
+    padding-bottom: 120px;
+    width: 1230px;
+    height: 108px;
+}
+.footer-nav-name {
+    font-family: 'Manrope Regular';
+    font-weight: 400;
+    margin: 0;
+    padding-right: 60px;
+}
+.footer-nav ul li {
+    margin-bottom: 20px;
+}
+.footer-nav ul li a{
+    color: #FFFFFF;
+}
+.footer-nav-contacts {
+    margin: 0;
+    padding-right: 60px;
+    padding-left: 120px;
+}
+.footer-nav-adress {
+    margin: 0;
+    width: 217px;
+    padding-right: 60px;
+    padding-left: 120px;
+}
+
+.footer-bottom {
+    justify-content: space-between;
+    display: flex;
+    height: 78px;
+    align-items: end;
+}
+
+hr{
+    margin: 0;
+    border-color: #8E919C;
+}
+
+/*Calculator form */
+.breadcrumbs {
+    display: flex;
+    gap: 7px;
+    padding-top: 60px;
+}
+.input-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+.input-block .item {
+    margin-bottom: 30px;
+    margin-right: 28px;
+}
+
+.input-block .item .item__name {
+    margin-bottom: 12px;
+}
+.input-block .item:last-child {
+    margin-bottom: 0; 
+}
+
+.input-block input{
+    text-indent: 23px; 
+    width: 474px;
+    height: 61px;
+    background-color: #F4F6FB;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-family: 'Manrope Regular';
+    font-weight: 400;
+    font-size: 16px;
+    color: #282D3C;
+}
+
+.input-block select{
+    text-indent: 23px; 
+    width: 478px;
+    height: 61px;
+    border: none;
+    font-family: 'Manrope Regular';
+    font-weight: 400;
+    font-size: 16px;
+    background-color:#F4F6FB;
+    color: #282D3C;
+    border-radius: 10px;
+}
+
+.input-block select option {
+    font-family: 'Manrope Regular';
+    font-weight: 400;
+    font-size: 16px;
+    color: #282D3C;
+    background-color:#F4F6FB;
+}
+
+.input-block .item .checkboxes {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 11px;
+}
+
+.checkbox input {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+.checkbox.top {
+    margin-top: 57px; 
+}
+.calculator-button{
+    display: flex;
+}
+
+.btn-calculator{
+    margin-bottom: 120px;
+    font-family: 'Manrope ExtraBold';
+    font-weight: 400;
+    font-size: 16;
+    width: 407px;
+    margin-top: 69px;
+}
+.buttun_item_text{
+    width: 504px;
+    margin-left: 30px;
+}
+.calculator-cost{
+    margin-left: 109px;
+}
+#result{
+    margin: 0;
+    font-family: 'Involve SemiBold';
+    font-weight: 700;
+    font-size: 50px;
+    color: #007BFB;
+}
